@@ -1,0 +1,534 @@
+.hamburger {
+    display: none;
+    font-size: 1.875em;
+    cursor: pointer;
+    position: fixed;
+    }
+    .menu-toggle {
+    display: none;
+    }
+ @media only screen and (min-width:1801px) and (max-width:1920px){
+    .Main-container{
+        width: 100%;
+        max-width: 1500px; 
+      }
+}
+
+@media only screen and (min-width:1701px) and (max-width:1800px){
+.Main-container{
+    width: 100%;
+    max-width: 1400px; 
+  }
+}
+@media only screen and (min-width:1601px) and (max-width:1700px){
+    .Main-container{
+        width: 100%;
+        max-width: 1300px; 
+      }
+}
+@media only screen and (min-width:1501px) and (max-width:1600px){
+    .Main-container{
+        width: 100%;
+        max-width: 1200px; 
+      }
+}
+@media only screen and (min-width:1401px) and (max-width:1500px){
+    .Main-container{
+        width: 100%;
+        max-width: 1100px; 
+      }
+}
+@media only screen and (min-width:1301px) and (max-width:1400px){
+    .Main-container{
+        width: 100%;
+        max-width: 1000px; 
+      }
+}
+@media only screen and (min-width:1201px) and (max-width:1300px){
+    .Main-container{
+        width: 100%;
+        max-width: 900px; 
+      }
+}
+@media only screen and (min-width:1101px) and (max-width:1200px){
+    .Main-container{
+        width: 100%;
+        max-width: 800px; 
+      }
+}
+@media only screen and (min-width:901px) and (max-width:1000px){
+    .Main-container{
+        width: 100%;
+        max-width: 700px; 
+      }
+}
+@media only screen and (min-width:768px) and (max-width:900px){
+ header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
+        height: 70px;
+    }
+    
+    .header-section header .main-menu {
+        display: flex;
+        width: 95%;
+        align-items: center;
+        padding: 0;
+    }
+    
+    header.scrolled {
+        background-color: rgba(0, 0, 0, 0.37);
+        opacity: 0.7; 
+    }
+    
+    .hamburger {
+        text-align: end;
+        padding-right: 10px;
+        align-items: center;
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        color: #0a0808;
+        position: relative;
+        z-index: 111;
+    }
+    
+    
+    #menu-toggle {
+        display: none; 
+    }
+    
+    .nav-links {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        position: fixed; 
+        top: 0;
+        padding: 0; /* Remove padding */
+        left: 0;
+        height: auto; /* Full height for better accessibility */
+        width: 100%; 
+        background-color: #00a2e8dc; 
+        transform: translateY(-100%); 
+        transition: transform 1.2s ease; 
+        z-index: 11;
+    }
+    .nav-links.open {
+        
+            transform: translateY(0);
+            padding: 0;
+            margin-top: 170px;
+        }
+        .dropdown-content {
+            display: none; /* Initially hidden */
+            position: absolute; /* Position it under the parent */
+            background-color: #00a2e8; /* Same color as parent */
+            z-index: 1011; /* Ensure it appears above other elements */
+            width: 100%; /* Match parent width */
+            transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth slide */
+            max-height: 0; /* Start with max-height 0 for slide effect */
+            opacity: 0; /* Make it invisible initially */
+            overflow: hidden; /* Hide overflow */
+        }
+        
+        /* Show the dropdown when parent is clicked */
+        .dropdown.open .dropdown-content {
+            display: block; /* Show dropdown */
+            max-height: 300px; /* Adjust this to fit your content */
+            opacity: 1; /* Make it visible */
+        }
+    
+   
+    #menu-toggle:checked + .hamburger + .nav-links {
+        transform: translateY(66%);
+        padding: 0; 
+        margin-top: 70px; 
+        z-index: 1111;
+    }
+    
+    
+    #menu-toggle:checked + .hamburger::before {
+        position: absolute;
+        font-size: 30px;
+        top: 15px; 
+        right: 10px;
+    }
+    
+    .nav-links li {
+        text-align: center;
+        z-index: 1111;
+    }
+    
+    .nav-links li a {
+        color: #070606; 
+        padding: 15px 0; 
+        text-decoration: none;
+        font-size: 22px;
+    } 
+     
+    .consultation-btn {
+        text-align: center;
+        width: 80px;
+        background-color: #00A4E8;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .curly-wave {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        pointer-events: none;
+    }
+    .banner-image {
+        margin-top: 170px;
+        width: 100%;
+        height: auto;
+    }
+    .hero-content {
+        flex-direction: column;
+        /* margin: 0 auto; */
+        /* max-width: 900px; */
+        /* width: 100%; */
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .hero-section {
+        position: relative;
+        background-color: white;
+        /* padding: 0px 10px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left-content {
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    .right-content{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .footer-section {
+        max-width: 100%;
+    }
+    .footer-links {
+        width: 100%;
+         max-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contact-info {
+        width: 100%;
+        max-width: 100%;
+        /* max-width: 100%; */
+    }
+    .container {
+        background-color: #f8f8f8;
+        margin: 0 auto;
+        /* padding: 0%; */
+        text-align: center;
+    }
+    .slick-arrow {
+        color: #3f3f3f;
+        padding: 0%;
+        border-radius: 50%;
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: #322b2b;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-next {
+        right: -15px;
+    }
+    .popup-content {
+        background-color: #fff;
+        padding: 27px;
+        border: 1px solid #888;
+        width: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        animation: popupAnim 0.3s ease-out;
+    }
+    .card {
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        flex: 1 1 calc(50% - 20px);
+        min-width: 200px;
+        max-width: 100%;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+    .newsletter input[type="email"], .newsletter button {
+         padding: 0%; 
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
+        height: 70px;
+    }
+    
+    .header-section header .main-menu {
+        display: flex;
+        width: 95%;
+        align-items: center;
+        padding: 0;
+    }
+    
+    header.scrolled {
+        background-color: rgba(0, 0, 0, 0.37);
+        opacity: 0.7; 
+    }
+    
+    .hamburger {
+        text-align: end;
+        padding-right: 10px;
+        align-items: center;
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        color: #0a0808; /* Change color to white for visibility */
+        position: relative;
+        z-index: 111;
+    }
+    
+    /* Hide the checkbox */
+    #menu-toggle {
+        display: none; /* Hides the checkbox */
+    }
+    
+    .nav-links {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        position: fixed; 
+        top: 0;
+        padding: 0; /* Remove padding */
+        left: 0;
+        height: auto; /* Full height for better accessibility */
+        width: 100%; 
+        background-color: #00a2e8dc; 
+        transform: translateY(-100%); 
+        transition: transform 1.2s ease; 
+        z-index: 11;
+    }
+    .nav-links.open {
+        
+            transform: translateY(0);
+            padding: 0;
+            margin-top: 170px;
+        }
+        .dropdown-content {
+            display: none; /* Initially hidden */
+            position: absolute; /* Position it under the parent */
+            background-color: #00a2e8dc; /* Same color as parent */
+            z-index: 10; /* Ensure it appears above other elements */
+            width: 100%; /* Match parent width */
+            transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth slide */
+            max-height: 0; /* Start with max-height 0 for slide effect */
+            opacity: 0; /* Make it invisible initially */
+            overflow: hidden; /* Hide overflow */
+        }
+        
+        /* Show the dropdown when parent is clicked */
+        .dropdown.open .dropdown-content {
+            display: block; /* Show dropdown */
+            max-height: 300px; /* Adjust this to fit your content */
+            opacity: 1; /* Make it visible */
+        }
+    
+    
+    /* Show nav links when the menu is toggled */
+    #menu-toggle:checked + .hamburger + .nav-links {
+        transform: translateY(66%);
+        padding: 0; /* Remove padding */
+        margin-top: 70px; /* Space for header height */
+    }
+    
+    /* Change hamburger icon to close icon */
+    #menu-toggle:checked + .hamburger::before {
+        position: absolute;
+        font-size: 30px;
+        top: 15px; /* Adjusted for better centering */
+        right: 10px;
+    }
+    
+    .nav-links li {
+        text-align: center;
+    }
+    
+    .nav-links li a {
+        color: #070606; /* Keep link text white */
+        padding: 15px 0; /* Add vertical spacing */
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .consultation-btn {
+        text-align: center;
+        width: 80px;
+        background-color: #00A4E8;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .curly-wave {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        pointer-events: none;
+    }
+    .banner-image {
+        margin-top: 170px;
+        width: 100%;
+        height: auto;
+    }
+    .hero-content {
+        flex-direction: column;
+        /* margin: 0 auto; */
+        /* max-width: 900px; */
+        /* width: 100%; */
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .hero-section {
+        position: relative;
+        background-color: white;
+         padding: 0px 10px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left-content {
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+    .right-content{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .footer-section {
+        max-width: 100%;
+    }
+    .footer-links {
+        width: 100%;
+         max-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contact-info {
+        width: 100%;
+        max-width: 100%;
+        /* max-width: 100%; */
+    }
+    .container {
+        background-color: #f8f8f8;
+        margin: 0 auto;
+        /* padding: 0%; */
+        text-align: center;
+    }
+    .slick-arrow {
+        color: #3f3f3f;
+        padding: 0%;
+        border-radius: 50%;
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: #635656;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-next {
+        right: -14px;
+    }
+    .popup-content {
+        background-color: #fff;
+        padding: 27px;
+        border: 1px solid #888;
+        width: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        animation: popupAnim 0.3s ease-out;
+    }
+    .services-section {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .card {
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        flex: 1 1 calc(50% - 20px);
+        min-width: 200px;
+        max-width: 100%;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+    .newsletter input[type="email"], .newsletter button {
+         padding: 0%; 
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+   
+
+    
+
+    
+  
+
+    
+    
+  }
+  

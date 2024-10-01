@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="mortgages, insurance, first time buyers, remortgage, buy to let, development finance, home loans, life insurance, income protection, critical illness cover, accident cover, financial services, Axinvest, Axinvest Mortgages, Axinvest Insurance, mortgage calculator, insurance advice, mortgage advice, home buying, property finance">
+    <title>AxInvest</title>
+    <link rel="stylesheet" href="./insurance_main.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+<link rel="stylesheet" href="./resize.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/axinvest_mortgages/" target="_blank"><img src="./photos/instagram2.png" alt=""></a>
+                <a href="https://www.facebook.com/people/Axinvest-Mortgages-Insurance/61553266344453/" target="_blank" ><img src="./photos/facebook.png" alt=""></a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2FAxinvest_Mort" target="_blank"><img src="./photos/twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="nav-content">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">&#9776;</label> 
+                <div class="logo">
+                    <a href="./index.html"><img src="./photos/axinvest-logo.webp" alt="AxInvest Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="./calculator_main.html">計算機とツール▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="mortgagecalculator.html">住宅ローン計算機</a></li>
+                            <li><a href="remortgagecalculator.html">住宅ローン計算機</a></li>
+                            <li><a href="stampdutycalculator.html">印紙税計算ツール</a></li>
+                            <li><a href="creditcheck.html">信用調査</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./mortgage_main.html">住宅ローン ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="firsttimebuyer.html">初めて購入する方</a></li>
+                            <li><a href="movinghome.html">引っ越し</a></li>
+                            <li><a href="remortgage.html">再住宅ローン</a></li>
+                            <li><a href="buytolet.html">買って任せる</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./insurance_main.html">保険 ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="generalinsurance.html">損害保険</a></li>
+                            <li><a href="lifeinsurance.html">生命保険</a></li>
+                            <li><a href="incomeprotection.html">所得保護</a></li>
+                            <li><a href="criticalillness.html">重篤な病気の補償</a></li>
+                            <li><a href="accident.html">事故・病気補償</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="whatwedo.html">私たちがやっていること</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+                <a href="javascript:void(0)" class="consultation-btn" id="openPopup">無料相談を申し込む</a>
+                <div id="popupForm" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closePopup">&times;</span>
+                        <h2>無料相談をリクエストする</h2>
+                        <form>
+                            <label for="name">あなたの詳細</label><br>
+                            <input type="text" id="name" placeholder="名前"><br>
+                            <input type="text" id="phone" placeholder="電話"><br>
+                            <label for="datetime">ご都合の良い曜日と時間は何ですか?</label><br>
+                            <input type="date" id="datetime"><br>
+                            <input type="time" id="time"><br>
+                            <label for="service">どのサービスに興味がありますか?</label><br>
+                            <select id="service">
+                                <option value="firstTimeBuyers">初めて購入する方</option>
+                                <option value="remortgage">再住宅ローン</option>
+                                <option value="movinghome">引っ越し</option>
+                                <option value="buytolet">買って任せる</option>
+                                <option value="generalinsurance">損害保険</option>
+                                <option value="lifeinsurance">生命保険</option>
+                                <option value="incomeprotection">所得保護</option>
+                                <option value="criticalillness">重篤な病気</option>
+                                <option value="accident/sickness cover">事故・病気補償</option>
+                            </select><br>
+                            <button type="submit">メッセージを送信する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="banner-section">
+        <div class="banner-image">
+            <img src="./images/insurance.png" alt="Banner Image" />
+        </div>
+        <svg class="curly-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#ffffff" d="M0,128L30,144C60,160,120,192,180,218.7C240,245,300,267,360,277.3C420,288,480,288,540,245.3C600,203,660,117,720,85.3C780,53,840,75,900,85.3C960,96,1020,96,1080,117.3C1140,139,1200,181,1260,186.7C1320,192,1380,160,1410,144L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+        </svg>
+    </div>
+   
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="left-content">
+                <nav class="breadcrumbs">
+                    <a href="index.html">家</a> >
+                    <a href="./insurance_main.html">保険</a> 
+                    <h1>保険</h1>
+                    <h3 style="color:black">Axinvest では、お客様に最適な商品を見つけることができる複数の保険会社にアクセスできます。</h3>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="./photos/1.PNG" alt="First Time Buyers">
+                            <h3>損害保険</h3>
+                            <p>家に保険をかけることは通常、住宅ローン提供者からの義務であり、常に中身にも保険をかけることをお勧めします。 Axinvestでは、</p>
+                            <a href="#">続きを読む »</a>
+                        </div>
+                        <div class="card">
+                            <img src="./photos/3.PNG" alt="Remortgage">
+                            <h3>生命保険</h3>
+                            <p>自分が亡くなった場合、大切な人を経済的に守ることは重要です。 Axinvest では、以下の要因を検討します。</p>
+                            <a href="#">続きを読む »</a>
+                        </div>
+                        <div class="card">
+                            <img src="./photos/2.PNG" alt="Moving Home">
+                            <h3>所得保護</h3>
+                            <p>事故や病気で働けなくなった場合、自分自身とあなたの大切な人を守ることが重要です。それは定期的に支払う</p>
+                            <a href="#">続きを読む »</a>
+                        </div>
+                       
+                        <div class="card">
+                            <img src="./photos/4.PNG" alt="Buy to Let">
+                            <h3>重篤な病気</h3>
+                            <p>重篤な病気の補償は、保険に含まれている疾患のいずれかであると診断された場合に経済的にサポートします。保険料はあなたに支払われます</p>
+                            <a href="#">続きを読む »</a>
+                        </div>
+                        <div class="card">
+                            <img src="./images/group-of-hands-holding-a-red-heart-hand-of-doctor-2022-09-28-22-47-53-utc-300x200.jpg" alt="Buy to Let">
+                            <h3>事故・病気補償</h3>
+                            <p>事故/病気補償は、働けない場合に定期収入を提供する短期の保護保険です。 Axinvestではアクセスできます</p>
+                            <a href="#">続きを読む »</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="right-content">
+                <div class="contact-form">
+                    <h2 class="h2">お問い合わせください</h2>
+                    <p>電話番号0208 050 1944またはWhatsAppでご連絡いただくか、下記に詳細をご入力いただければ、こちらからご連絡いたします。</p>
+                    
+                    <div class="contact-icons">
+                        <div class="call-icon">
+                            <i aria-hidden="true" class="fas fa-mobile-alt"></i>
+                            <br>
+                            <span>お電話ください</span>
+                        </div>
+                        <div class="whatsapp-icon">
+                            <i aria-hidden="true" class="fab fa-whatsapp"></i>
+                            <br>
+                            <span>ワッツアップ</span>
+                        </div>
+                    </div>
+                    
+                    <form>
+                        <input type="text" placeholder="名前">
+                        <input type="email" placeholder="電子メール">
+                        <input type="tel" placeholder="電話">
+                        <textarea placeholder="どうすれば助けられるでしょうか？"></textarea>
+                        <button type="submit">メッセージを送信する</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            
+    <div class="container">
+        <div class="maincontainer">
+        <h2>Axinvest 住宅ローン&保険について</h2>
+        <p class="description1">Axinvest は、初めての住宅の購入、引っ越し、住宅ローンの借り換えを検討している人にサービスを提供しています。</p>
+        <p class="description">また、企業と個人の両方向けに、売買や開発融資もお手伝いします。当社は、お客様の要件に合った適切な商品を確実に見つけることができるよう、金融業者の包括的なリストを使用しています。幅広い保険会社のリストからお客様とご家族に最適な保険をお選びいたします。</p>
+        <h3 class="heading">お客様の声...</h3>
+        <div class="rating">
+            素晴らしい <div class="stars">★★★★★</div>
+            8 件のレビューに基づく <br>
+            <img src="./photos/google.svg" alt="Google Logo" width="40">
+        </div>
+    
+        <!-- Slick Slider -->
+        <!-- <div class="reviews slick-slider">
+            <div class="review-card">
+                <h3>Rebecca Japp</h3>
+                <div class="review-date">2024-06-28</div>
+                <div class="stars">★★★★★</div>
+                <p>Really good help, made sure I didn't stress about things, kept me updated as much as possible.</p>
+            </div>
+    
+            <div class="review-card">
+                <h3>Ryan Arthur</h3>
+                <div class="review-date">2024-06-20</div>
+                <div class="stars">★★★★★</div>
+                <p>Great all-round service! Helped guide me explaining each step with professionalism and expertise. Thanks to their hard work and effort!</p>
+            </div>
+    
+            <div class="review-card">
+                <h3>Julie Fairlie</h3>
+                <div class="review-date">2024-06-03</div>
+                <div class="stars">★★★★★</div>
+                <p>I highly recommend the services from Axinvest Mortgages, who helped me recently. They took time to understand...</p>
+            </div>
+    
+            <div class="review-card">
+                <h3>Taylor Clem</h3>
+                <div class="review-date">2024-04-08</div>
+                <div class="stars">★★★★★</div>
+                <p>Harjot was fantastic to work with. He helped us secure a mortgage despite an unconventional case. He was super communicative.</p>
+            </div>
+    
+            <div class="review-card">
+                <h3>James Anderson</h3>
+                <div class="review-date">2024-04-05</div>
+                <div class="stars">★★★★★</div>
+                <p>They made the process so smooth and easy for us. Couldn't be happier with their services!</p>
+            </div>
+        </div> -->
+        <div class="review-card">
+            <div><img src="./photos/r1.PNG" alt="Logo 1"></div>
+            <div><img src="./photos/r2.PNG" alt="Logo 2"></div>
+            <div><img src="./photos/r3.PNG" alt="Logo 3"></div>
+            <div><img src="./photos/r4.PNG" alt="Logo 4"></div>
+            <div><img src="./photos/r5.PNG" alt="Logo 5"></div>
+            <div><img src="./photos/r6.PNG" alt="Logo 6"></div>
+            <div><img src="./photos/r7.PNG" alt="Logo 7"></div>
+            <div><img src="./photos/r8.PNG" alt="Logo 7"></div>
+    
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="maincontainer">
+        <div class="newsletter">
+            <h3>ニュースレターに登録する</h3>
+            <p>スパムはありません。役立つと思われるアドバイスとニュースのみです。</p>
+            <form>
+                <input type="email" placeholder="Email">
+                <button type="submit">サインアップ</button>
+            </form>
+        </div>
+        <div class="footer-container">
+            <div class="footer-section"> 
+                <a href="./index.html"><h3>AXINVEST</h3></a>
+                <p>Axinvest Mortgages and Insurance は、住宅ローンと保険のニーズに最適な商品を提供するサービスを提供します。</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/axinvest_mortgages/" target="_blank"><img src="./photos/instagram2.png" alt=""></a>
+                    <a href="https://www.facebook.com/people/Axinvest-Mortgages-Insurance/61553266344453/" target="_blank" ><img src="./photos/facebook.png" alt=""></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2FAxinvest_Mort" target="_blank"><img src="./photos/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="links-group">
+                    <a href="./mortgage_main.html"><h4>住宅ローン</h4></a>
+                    <ul>
+                        <li><a href="firsttimebuyer.html">初めて購入する方</a></li>
+                                <li><a href="movinghome.html">引っ越し</a></li>
+                                <li><a href="remortgage.html">再住宅ローン</a></li>
+                                <li><a href="buytolet.html">買って任せる</a></li>
+                    </ul>
+                </div>
+                <div class="links-group">
+                    <a href="./insurance_main.html"><h4>保険</h4></a>
+                    <ul>
+                        <li><a href="generalinsurance.html">損害保険</a></li>
+                        <li><a href="lifeinsurance.html">生命保険</a></li>
+                        <li><a href="incomeprotection.html">所得保護</a></li>
+                        <li><a href="criticalillness.html">重篤な病気の補償</a></li>
+                        <li><a href="accident.html">事故・病気補償</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h4>お問い合わせ</h4>
+                <a href="tel:02080501944" style="text-decoration: none; color: #fff;"><p>📞 0208 050 1944</p></a>
+                <a href="mailto:info@axinvest.co.uk "style="text-decoration: none; color: #fff;"><p>📧 info@axinvest.co.uk</p></a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-consent">
+        <p>この Web サイトでは、お客様に最高のエクスペリエンスを提供するために Cookie を使用しています。 
+        <a href="#">もっと詳しく知る</a>.</p>
+        <button id="accept-cookies">クッキーを受け入れる</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open'); // Add a class that will display the nav links
+    });
+    
+    
+    
+    document.querySelectorAll('.dropdown > a').forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            const dropdown = this.parentElement; // Get parent dropdown
+    
+            // Toggle the open class to show/hide the dropdown
+            dropdown.classList.toggle('open');
+        });
+    });
+    
+   
+
+$(document).ready(function(){
+    $('.review-card').slick({
+        slidesToShow: 4,   // Show 4 images per row
+        slidesToScroll: 1, // Scroll 1 image at a time
+        arrows: true,      // Enable arrow buttons
+        infinite: true,    // Enable infinite scrolling
+        prevArrow: '<button class="slick-prev">&lt;</button>',
+        nextArrow: '<button class="slick-next">&gt;</button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the user has already accepted cookies
+    if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookie-consent").style.display = "block";
+    }
+
+    document.getElementById("accept-cookies").addEventListener("click", function() {
+        // Set a flag in localStorage to remember the user's choice
+        localStorage.setItem("cookiesAccepted", "true");
+        document.getElementById("cookie-consent").style.display = "none";
+    });
+});
+
+
+</script>
+</body>
+</html>

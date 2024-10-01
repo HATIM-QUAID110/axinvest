@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="mortgages, insurance, first time buyers, remortgage, buy to let, development finance, home loans, life insurance, income protection, critical illness cover, accident cover, financial services, Axinvest, Axinvest Mortgages, Axinvest Insurance, mortgage calculator, insurance advice, mortgage advice, home buying, property finance">
+    <title>AxInvest</title>
+    <link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/axinvest_mortgages/" target="_blank"><img src="./photos/instagram2.png" alt=""></a>
+                <a href="https://www.facebook.com/people/Axinvest-Mortgages-Insurance/61553266344453/" target="_blank" ><img src="./photos/facebook.png" alt=""></a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2FAxinvest_Mort" target="_blank"><img src="./photos/twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="nav-content">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">&#9776;</label> 
+                <div class="logo">
+                    <a href="./index.html"><img src="./photos/axinvest-logo.webp" alt="AxInvest Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="./calculator_main.html">計算機とツール▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="mortgagecalculator.html">住宅ローン計算機</a></li>
+                            <li><a href="remortgagecalculator.html">住宅ローン計算機</a></li>
+                            <li><a href="stampdutycalculator.html">印紙税計算ツール</a></li>
+                            <li><a href="creditcheck.html">信用調査</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./mortgage_main.html">住宅ローン ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="firsttimebuyer.html">初めて購入する方</a></li>
+                            <li><a href="movinghome.html">引っ越し</a></li>
+                            <li><a href="remortgage.html">再住宅ローン</a></li>
+                            <li><a href="buytolet.html">買って任せる</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./insurance_main.html">保険 ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="generalinsurance.html">損害保険</a></li>
+                            <li><a href="lifeinsurance.html">生命保険</a></li>
+                            <li><a href="incomeprotection.html">所得保護</a></li>
+                            <li><a href="criticalillness.html">重篤な病気の補償</a></li>
+                            <li><a href="accident.html">事故・病気補償</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="whatwedo.html">私たちがやっていること</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+                <a href="javascript:void(0)" class="consultation-btn" id="openPopup">無料相談を申し込む</a>
+                <div id="popupForm" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closePopup">&times;</span>
+                        <h2>無料相談をリクエストする</h2>
+                        <form>
+                            <label for="name">あなたの詳細</label><br>
+                            <input type="text" id="name" placeholder="名前"><br>
+                            <input type="text" id="phone" placeholder="電話"><br>
+                            <label for="datetime">ご都合の良い曜日と時間は何ですか?</label><br>
+                            <input type="date" id="datetime"><br>
+                            <input type="time" id="time"><br>
+                            <label for="service">どのサービスに興味がありますか?</label><br>
+                            <select id="service">
+                                <option value="firstTimeBuyers">初めて購入する方</option>
+                                <option value="remortgage">再住宅ローン</option>
+                                <option value="movinghome">引っ越し</option>
+                                <option value="buytolet">買って任せる</option>
+                                <option value="generalinsurance">損害保険</option>
+                                <option value="lifeinsurance">生命保険</option>
+                                <option value="incomeprotection">所得保護</option>
+                                <option value="criticalillness">重篤な病気</option>
+                                <option value="accident/sickness cover">事故・病気補償</option>
+                            </select><br>
+                            <button type="submit">メッセージを送信する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hero-section">
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <div class="left-section">
+                    <h1>Axinvest 住宅ローンと保険</h1>
+                    <p class="p1">住宅ローンや保険などお客様のご要望に合わせて最適な商品をご提案させていただきます。</p>
+                    <p>当社は、お客様の状況に何が最適かを判断するために、貸し手およびプロバイダーの包括的なパネルにアクセスできます。</p>
+                    <p>私たちは、お客様のニーズ、目標、好みを理解するために時間をかけて、お客様のニーズに最も適した製品を実現します。</p>
+                    <div class="buttons">
+                        <div class="btn"><a href="./mortgage_main.html"><button>住宅ローンファインダー</button></a></div>
+                        <div class="btn"> <a href="./creditcheck.html"><button>信用調査</button></a></div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <h2>手頃な価格の簡単な計算ツールをお試しください</h2>
+                    <p>いくら借りられるかを見る</p>
+                    <form oninput="calculateMortgage()">
+                        <label for="housePrice">住宅価格</label>
+                        <input type="number" id="housePrice" placeholder="住宅価格を入力してください" value="">
+                        <label for="deposit">合計入金額</label>
+                        <input type="number" id="deposit" placeholder="デポジットを入力してください" value="">
+                        <div class="calculation">
+                            <p>モーゲージ： <strong id="mortgageAmount">¥0</strong></p>
+                            <p>金利 (3%): <strong id="interestAmount">¥0</strong></p>
+                            <p>返済（25年）： <strong id="repaymentAmount">¥0</strong></p>
+                        </div>
+                        <button type="button" id="openPopup">今すぐ無料のアドバイスを受け取る</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="services-section">
+        <div class="maincontainer">
+        <h2>住宅ローンサービス</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./photos/1.PNG" alt="First Time Buyers">
+                <h3>初めて購入する方</h3>
+                <p>初めての不動産購入はエキサイティングな時期であると同時に、気が遠くなるような経験でもあるため、最初から適切なアドバイスを受けることが不可欠です。</p>
+                <a href="firsttimebuyer.html">続きを読む »</a>
+            </div>
+            <div class="card">
+                <img src="./photos/2.PNG" alt="Moving Home">
+                <h3>引っ越し</h3>
+                <p>立地、縮小または拡大などのさまざまな理由で引っ越しを希望する場合、Axinvest はすべての基準を検討して、次の引っ越しが正しいものであることを確認します。</p>
+                <a href="movinghome.html">続きを読む »</a>
+            </div>
+            <div class="card">
+                <img src="./photos/3.PNG" alt="Remortgage">
+                <h3>再住宅ローン</h3>
+                <p>他でもっと安く借り換えることができるかどうかを検討せずに、現在の金融業者が提供するものを受け入れないでください。 Axinvest は平均真コストを調べます。</p>
+                <a href="remortgage.html">続きを読む »</a>
+            </div>
+            <div class="card">
+                <img src="./photos/4.PNG" alt="Buy to Let">
+                <h3>買って任せる</h3>
+                <p>あなたが家主の場合、私たちはあなたのポートフォリオに最適なオプションのリストを提供するお手伝いをします。あるいは、お客様に合わせて製品をカスタマイズすることもできます。</p>
+                <a href="buytolet.html">続きを読む »</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="slider" style="width: 100%;">
+        <div class="maincontainer" style="width: 100%;">
+    <div class="logo-slider"style="width: 100%;">
+        <a href="https://www.accordmortgages.com/" target="_blank"><div><img src="./images/accord.png" alt="Logo 1"></div></a>
+        <a href="https://www.aldermore.co.uk/" target="_blank"><div><img src="./images/aldermore-300x44.jpg" alt="Logo 2"></div></a>
+        <a href="https://aprilmortgages.co.uk/" target="_blank"><div><img src="./images/april-mortgages-logo-300x150.png" alt="Logo 3"></div></a>
+        <a href="https://www.bankofireland.com/"target="_blank"><div><img src="./images/bankofireland-300x236.png" alt="Logo 4"></div></a>
+        <a href="https://www.barclays.co.uk/"target="_blank"><div><img src="./images/barclays.svg" alt="Logo 5"></div></a>
+        <a href="https://bluestonemortgages.co.uk/"target="_blank"><div><img src="./images/bluestone.svg" alt="Logo 6"></div></a>
+        <a href="https://www.bmsolutions.co.uk/"target="_blank"><div><img src="./images/bm.png" alt="Logo 7"></div></a>
+        <a href="https://www.bucksbs.co.uk/"target="_blank"><div><img src="./images/bucking-300x78.png" alt="Logo 8"></div></a>
+        <a href="https://www.castletrust.co.uk/"target="_blank"><div><img src="./images/castle-trust.png" alt="Logo 9"></div></a>
+        <a href="https://www.chlmortgages.co.uk/"target="_blank"><div><img src="./images/chl-300x144.png" alt="Logo 10"></div></a>
+        <a href="https://secure.cbonline.co.uk/"target="_blank"><div><img src="./images/clydesale-300x199.png" alt="Logo 11"></div></a>
+        <a href="https://www.co-operativebank.co.uk/"target="_blank"><div><img src="./images/coop.svg" alt="Logo 12"></div></a>
+        <a href="https://coventrybuildingsociety.co.uk/"target="_blank"><div><img src="./images/coventry.png" alt="Logo 13"></div></a>
+        <a href="https://www.darlington.co.uk/"target="_blank"><div><img src="./images/darlington.svg" alt="Logo 14"></div></a>
+        <a href="https://www.atombank.co.uk/intermediaries/"target="_blank"><div><img src="./images/digital-300x92.png" alt="Logo 15"></div></a>
+        <a href="https://www.dudleybuildingsociety.co.uk/"target="_blank"><div><img src="./images/dudley.svg" alt="Logo 16"></div></a>
+        <a href="https://www.foundationforintermediaries.co.uk/"target="_blank"><div><img src="./images/fhl_logo.svg" alt="Logo 17"></div></a>
+        <a href="https://www.furnessbs.co.uk/intermediaries"target="_blank"><div><img src="./images/furness-300x110.png" alt="Logo 18"></div></a>
+        <a href="https://www.gatehousebank.com/personal"target="_blank"><div><img src="./images/gatehouse.svg" alt="Logo 19"></div></a>
+        <a href="https://intermediaries.generationhome.com/"target="_blank"><div><img src="./images/generation-homes.svg" alt="Logo 20"></div></a>
+        <a href="https://greenfieldmortgages.com/"target="_blank"><div><img src="./images/greenfield-300x21.png" alt="Logo 21"></div></a>
+        <a href="https://www.halifax-intermediaries.co.uk/"target="_blank"><div><img src="./images/Halifax-Logo-1985-2019-1171842117-300x169.png" alt="Logo 22"></div></a>
+        <a href="https://www.htb.co.uk/"target="_blank"><div><img src="./images/htb.svg" alt="Logo 23"></div></a>
+        <a href="https://www.thehanley.co.uk/"target="_blank"><div><img src="./images/hanley.svg" alt="Logo 24"></div></a>
+        <a href="https://www.harpendenbs.co.uk/"target="_blank"><div><img src="./images/harpenden-300x54.png" alt="Logo 25"></div></a>
+        <a href="https://www.hrbs.co.uk/"target="_blank"><div><img src="./images/hinkley.svg" alt="Logo 26"></div></a>
+        <a href="https://hodgebank.co.uk/intermediaries/"target="_blank"><div><img src="./images/hodge_full_colour.webp" alt="Logo 27"></div></a>
+        <a href="https://www.hsbc.co.uk/"target="_blank"><div><img src="./images/hsbc-uk.svg" alt="Logo 28"></div></a>
+        <a href="https://www.interbay.co.uk/"target="_blank"><div><img src="./images/interbay.png" alt="Logo 29"></div></a>
+        <a href="https://www.kensingtonmortgages.co.uk/"target="_blank"><div><img src="./images/kensington.svg" alt="Logo 30"></div></a>
+        <a href="https://www.kentreliance.co.uk/"target="_blank"><div><img src="./images/kentreliance-300x42.png" alt="Logo 31"></div></a>
+        <a href="https://www.leedsbuildingsociety.co.uk/"target="_blank"><div><img src="./images/leeds-300x70.png" alt="Logo 32"></div></a>
+        <a href="https://www.lendinvest.com/"target="_blank"><div><img src="./images/lend-invest.svg" alt="Logo 33"></div></a>
+        <a href="https://www.mansfieldbs.co.uk/"target="_blank"><div><img src="./images/mansfield.svg" alt="Logo 34"></div></a>
+        <a href="https://mhbs.co.uk/"target="_blank"><div><img src="./images/MHBS-Logo-300x85.png" alt="Logo 35"></div></a>
+        <a href="https://www.themarsden.co.uk/"target="_blank"><div><img src="./images/marsden.svg" alt="Logo 36"></div></a>
+        <a href="https://www.themelton.co.uk/"target="_blank"><div><img src="./images/melton.svg" alt="Logo 37"></div></a>
+        <a href="https://www.metrobankonline.co.uk/"target="_blank"><div><img src="./images/metro-300x135.png" alt="Logo 38"></div></a>
+        <a href="https://mpowered.co.uk/customer"target="_blank"><div><img src="./images/mpowered-300x101.png" alt="Logo 39"></div></a>
+        <a href="https://www.nationwide.co.uk/"target="_blank"><div><img src="./images/nationwide-300x97.png" alt="Logo 40"></div></a>
+        <a href="https://www.natwest.com/"target="_blank"><div><img src="./images/natwest.png" alt="Logo 41"></div></a>
+        <a href="https://www.newbury.co.uk/"target="_blank"><div><img src="./images/newbury-building-society@2x.c01724556cf8-300x84.png" alt="Logo 42"></div></a>
+        <a href="https://www.newcastle.co.uk/"target="_blank"><div><img src="./images/newcastle.svg" alt="Logo 43"></div></a>
+        <a href="https://www.nortonhomeloans.co.uk/"target="_blank"><div><img src="./images/norton-home-loans-logo.png" alt="Logo 44"></div></a>
+        <a href="https://www.thenottingham.com/"target="_blank"><div><img src="./images/nottingham-building-society-logo.png" alt="Logo 45"></div></a>
+        <a href="https://octopus-realestate.com/"target="_blank"><div><img src="./images/octopus.svg" alt="Logo 46"></div></a>
+        <a href="https://ownnew.co.uk/"target="_blank"><div><img src="./images/own-new.svg" alt="Logo 47"></div></a>
+        <a href="https://www.paragonbank.co.uk/"target="_blank"><div><img src="./images/pargon_logo_black-300x111.png" alt="Logo 48"></div></a>
+        <a href="https://www.pepper.money/"target="_blank"><div><img src="./images/pepper-money-blue-430x60px.svg" alt="Logo 49"></div></a>
+        <a href="https://perenna.com/"target="_blank"><div><img src="./images/perenna-300x62.png" alt="Logo 50"></div></a>
+        <a href="https://www.precisemortgages.co.uk/"target="_blank"><div><img src="./images/precision.svg" alt="Logo 51"></div></a>
+        <a href="https://www.principality.co.uk/"target="_blank"><div><img src="./images/PBSPrimaryIdentityDualLanguageRGB.svg" alt="Logo 52"></div></a>
+        <a href="https://progressiveforintermediaries.com/"target="_blank"><div><img src="./images/progressive.png" alt="Logo 53"></div></a>
+        <a href="https://www.reliancebankltd.com/"target="_blank"><div><img src="./images/reliance-bank-300x128.png" alt="Logo 54"></div></a>
+        <a href="https://www.santander.co.uk/"target="_blank"><div><img src="./images/santander.svg" alt="Logo 55"></div></a>
+        <a href="https://adviser.scottishwidows.co.uk/"target="_blank"><div><img src="./images/scottish-widows-300x105.png" alt="Logo 56"></div></a>
+        <a href="https://www.skipton.co.uk/"target="_blank"><div><img src="./images/skipton-building-society-logo.svg" alt="Logo 57"></div></a>
+        <a href="https://srbs.co.uk/"target="_blank"><div><img src="./images/The-Stafford-Building-Society-Logo-Main.svg" alt="Logo 58"></div></a>
+        <a href="https://www.suffolkbuildingsociety.co.uk/"target="_blank"><div><img src="./images/suffolk.svg" alt="Logo 59"></div></a>
+        <a href="https://www.tandem.co.uk/"target="_blank"><div><img src="./images/tandem.svg" alt="Logo 60"></div></a>
+        <a href="https://www.teachersbuildingsociety.co.uk/"target="_blank"><div><img src="./images/teachers-building-society-300x100.png" alt="Logo 61"></div></a>
+        <a href="https://www.theloanpartnership.co.uk/"target="_blank"><div><img src="./images/the-loan-partnership-300x121.png" alt="Logo 62"></div></a>
+        <a href="https://www.themortgagelender.com/"target="_blank"><div><img src="./images/the-mortgage-lender-300x150.png" alt="Logo 63"></div></a>
+        <a href="https://www.tsb.co.uk/"target="_blank"><div><img src="./images/tsb.svg" alt="Logo 64"></div></a>
+        <a href="https://www.utbank.co.uk/"target="_blank"><div><img src="./images/united-trust-bank-300x98.png" alt="Logo 65"></div></a>
+        <a href="https://www.vidahomeloans.co.uk/"target="_blank"><div><img src="./images/vida-home-loans-300x224.png" alt="Logo 66"></div></a>
+        <a href="https://uk.virginmoney.com/"target="_blank"><div><img src="./images/virgin-money-300x94.png" alt="Logo 67"></div></a>
+        <a href="https://www.tmwdirect.co.uk/"target="_blank"><div><img src="./images/west-one-300x85.png" alt="Logo 68"></div></a>
+    </div>
+</div>
+</section>
+<section class="services-section">
+    <div class="maincontainer">
+    <h2>Insurance Services</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="./images/selective-focus-of-house-model-on-white-desk-mortg-WN8GSNU-300x200.jpg" alt="General Insurance">
+            <h3>損害保険</h3>
+            <p>家に保険をかけることは通常、住宅ローン提供者からの義務であり、常に中身にも保険をかけることをお勧めします。 Axinvestでは複数の金融機関にアクセスできます.</p>
+            <a href="./generalinsurance.html">続きを読む »</a>
+        </div>
+        <div class="card">
+            <img src="./images/white-paper-cut-family-and-house-model-on-wooden-t-2022-12-16-16-12-23-utc-300x200.jpg" alt="Life insurance">
+            <h3>生命保険</h3>
+            <p>自分が亡くなった場合、大切な人を経済的に守ることは重要です。 Axinvest では、以下の要素を検討し、包括的なリストを検索します。</p>
+            <a href="./lifeinsurance.html">続きを読む »</a>
+        </div>
+        <div class="card">
+            <img src="./images/saving-money-home-loan-mortgage-a-property-investm-SAY7TND-300x200.jpg" alt="income">
+            <h3>所得保護</h3>
+            <p>事故や病気で働けなくなった場合、自分自身とあなたの大切な人を守ることが重要です。定期的に非課税収入が得られます。 Axinvestでは</p>
+            <a href="#">続きを読む »</a>
+        </div>
+        <div class="card">
+            <img src="./images/group-of-hands-holding-a-red-heart-hand-of-doctor-2022-09-28-22-47-53-utc-300x200.jpg" alt="critical illness">
+            <h3>重篤な病気の補償</h3>
+            <p>重篤な病気の補償は、保険に含まれている疾患のいずれかであると診断された場合に経済的にサポートします。この保険では、非課税の一時金が支払われます。</p>
+            <a href="./criticalillness.html">続きを読む »</a>
+        </div>
+    </div>
+</div>
+</section>
+<section class="slider">
+    <div class="maincontainer" style="width: 100%;">
+    <div class="logo-slider">
+        <div><img src="./images/royallondon.svg" alt="Logo 1"></div>
+        <div><img src="./images/theexeter.svg" alt="Logo 2"></div>
+        <div><img src="./images/vitality-logo-ellipse-pink.svg" alt="Logo 3"></div>
+        <div><img src="./images/AIG-logo-300x154.png" alt="Logo 4"></div>
+        <div><img src="./images/aviva_logo_white_bg_140x50._v2.png" alt="Logo 5"></div>
+        <div><img src="./images/guardian-300x109.png" alt="Logo 6"></div>
+        <div><img src="./images/LG1-1024x553-3768948114-300x162.png" alt="Logo 7"></div>
+        <div><img src="./images/lve.webp" alt="Logo 7"></div>
+    </div>
+</div>
+</section>
+<div class="container">
+    <div class="maincontainer">
+    <h2>Axinvest 住宅ローン&保険について</h2>
+    <p class="description1">Axinvest は、初めての住宅の購入、引っ越し、住宅ローンの借り換えを検討している人にサービスを提供しています。</p>
+    <p class="description">また、企業と個人の両方向けに、売買や開発融資もお手伝いします。当社は、お客様の要件に合った適切な商品を確実に見つけることができるよう、金融業者の包括的なリストを使用しています。幅広い保険会社のリストからお客様とご家族に最適な保険をお選びいたします。</p>
+    <h3 class="heading">お客様の声...</h3>
+    <div class="rating">
+        素晴らしい <div class="stars">★★★★★</div>
+        8 件のレビューに基づく <br>
+        <img src="./photos/google.svg" alt="Google Logo" width="40">
+    </div>
+
+    <!-- Slick Slider -->
+    <!-- <div class="reviews slick-slider">
+        <div class="review-card">
+            <h3>Rebecca Japp</h3>
+            <div class="review-date">2024-06-28</div>
+            <div class="stars">★★★★★</div>
+            <p>Really good help, made sure I didn't stress about things, kept me updated as much as possible.</p>
+        </div>
+
+        <div class="review-card">
+            <h3>Ryan Arthur</h3>
+            <div class="review-date">2024-06-20</div>
+            <div class="stars">★★★★★</div>
+            <p>Great all-round service! Helped guide me explaining each step with professionalism and expertise. Thanks to their hard work and effort!</p>
+        </div>
+
+        <div class="review-card">
+            <h3>Julie Fairlie</h3>
+            <div class="review-date">2024-06-03</div>
+            <div class="stars">★★★★★</div>
+            <p>I highly recommend the services from Axinvest Mortgages, who helped me recently. They took time to understand...</p>
+        </div>
+
+        <div class="review-card">
+            <h3>Taylor Clem</h3>
+            <div class="review-date">2024-04-08</div>
+            <div class="stars">★★★★★</div>
+            <p>Harjot was fantastic to work with. He helped us secure a mortgage despite an unconventional case. He was super communicative.</p>
+        </div>
+
+        <div class="review-card">
+            <h3>James Anderson</h3>
+            <div class="review-date">2024-04-05</div>
+            <div class="stars">★★★★★</div>
+            <p>They made the process so smooth and easy for us. Couldn't be happier with their services!</p>
+        </div>
+    </div> -->
+    <div class="review-card">
+        <div><img src="./photos/r1.PNG" alt="Logo 1"></div>
+        <div><img src="./photos/r2.PNG" alt="Logo 2"></div>
+        <div><img src="./photos/r3.PNG" alt="Logo 3"></div>
+        <div><img src="./photos/r4.PNG" alt="Logo 4"></div>
+        <div><img src="./photos/r5.PNG" alt="Logo 5"></div>
+        <div><img src="./photos/r6.PNG" alt="Logo 6"></div>
+        <div><img src="./photos/r7.PNG" alt="Logo 7"></div>
+        <div><img src="./photos/r8.PNG" alt="Logo 7"></div>
+
+    </div>
+</div>
+</div>
+<footer class="footer">
+    <div class="maincontainer">
+    <div class="newsletter">
+        <h3>ニュースレターに登録する</h3>
+        <p>スパムはありません。役立つと思われるアドバイスとニュースのみです。</p>
+        <form>
+            <input type="email" placeholder="Email">
+            <button type="submit">サインアップ</button>
+        </form>
+    </div>
+    <div class="footer-container">
+        <div class="footer-section"> 
+            <a href="./index.html"><h3>AXINVEST</h3></a>
+            <p>Axinvest Mortgages and Insurance は、住宅ローンと保険のニーズに最適な商品を提供するサービスを提供します。</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/axinvest_mortgages/" target="_blank"><img src="./photos/instagram2.png" alt=""></a>
+                <a href="https://www.facebook.com/people/Axinvest-Mortgages-Insurance/61553266344453/" target="_blank" ><img src="./photos/facebook.png" alt=""></a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2FAxinvest_Mort" target="_blank"><img src="./photos/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="links-group">
+                <a href="./mortgage_main.html"><h4>住宅ローン</h4></a>
+                <ul>
+                    <li><a href="firsttimebuyer.html">初めて購入する方</a></li>
+                            <li><a href="movinghome.html">引っ越し</a></li>
+                            <li><a href="remortgage.html">再住宅ローン</a></li>
+                            <li><a href="buytolet.html">買って任せる</a></li>
+                </ul>
+            </div>
+            <div class="links-group">
+                <a href="./insurance_main.html"><h4>保険</h4></a>
+                <ul>
+                    <li><a href="generalinsurance.html">損害保険</a></li>
+                    <li><a href="lifeinsurance.html">生命保険</a></li>
+                    <li><a href="incomeprotection.html">所得保護</a></li>
+                    <li><a href="criticalillness.html">重篤な病気の補償</a></li>
+                    <li><a href="accident.html">事故・病気補償</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-info">
+            <h4>お問い合わせ</h4>
+            <a href="tel:02080501944" style="text-decoration: none; color: #fff;"><p>📞 0208 050 1944</p></a>
+            <a href="mailto:info@axinvest.co.uk "style="text-decoration: none; color: #fff;"><p>📧 info@axinvest.co.uk</p></a>
+        </div>
+    </div>
+</div>
+</footer>
+<div id="cookie-consent" class="cookie-consent">
+    <p>この Web サイトでは、お客様に最高のエクスペリエンスを提供するために Cookie を使用しています。 
+    <a href="#">もっと詳しく知る</a>.</p>
+    <button id="accept-cookies">クッキーを受け入れる</button>
+</div>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+
+
+
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open'); // Add a class that will display the nav links
+    });
+    
+    
+    
+    document.querySelectorAll('.dropdown > a').forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            const dropdown = this.parentElement; // Get parent dropdown
+    
+            // Toggle the open class to show/hide the dropdown
+            dropdown.classList.toggle('open');
+        });
+    });
+    
+
+    $(document).ready(function(){
+    $('.logo-slider').slick({
+        infinite: true,
+        slidesToShow: 6,  /* Number of logos to show at a time */
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,  /* Hide navigation arrows */
+        dots: false,  /* Hide dots navigation */
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+});
+
+$(document).ready(function(){
+    $('.review-card').slick({
+        slidesToShow: 4,   // Show 4 images per row
+        slidesToScroll: 1, // Scroll 1 image at a time
+        arrows: true,      // Enable arrow buttons
+        infinite: true,    // Enable infinite scrolling
+        prevArrow: '<button class="slick-prev">&lt;</button>',
+        nextArrow: '<button class="slick-next">&gt;</button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+});
+
+function calculateMortgage() {
+    // Get input values
+    const housePrice = parseFloat(document.getElementById('housePrice').value) || 0;
+    const deposit = parseFloat(document.getElementById('deposit').value) || 0;
+
+    // Check for valid input
+    if (housePrice <= deposit) {
+        document.getElementById('mortgageAmount').textContent = "Invalid input";
+        document.getElementById('interestAmount').textContent = "Invalid input";
+        document.getElementById('repaymentAmount').textContent = "Invalid input";
+        return;
+    }
+
+    // Mortgage calculation
+    const mortgage = housePrice - deposit;
+    const interest = mortgage * 0.03;  // 3% interest
+    const repayment = (mortgage * 0.03 * 25) / (12 * 25);  // Rough monthly repayment over 25 years
+
+    // Display the results
+    document.getElementById('mortgageAmount').textContent = `£${mortgage.toLocaleString()}`;
+    document.getElementById('interestAmount').textContent = `£${interest.toFixed(2)}`;
+    document.getElementById('repaymentAmount').textContent = `£${repayment.toFixed(2)}`;
+}
+    document.addEventListener("DOMContentLoaded", function() {
+        // Check if the user has already accepted cookies
+        if (!localStorage.getItem("cookiesAccepted")) {
+            document.getElementById("cookie-consent").style.display = "block";
+        }
+    
+        document.getElementById("accept-cookies").addEventListener("click", function() {
+            // Set a flag in localStorage to remember the user's choice
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookie-consent").style.display = "none";
+        });
+    });
+    
+    
+</script>
+</body>
+
+
+</html>
